@@ -1,19 +1,24 @@
 package com.example.myapplication.home_screen
 
+import android.Manifest
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.location.LocationManager
 import android.net.ConnectivityManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.utility.App_preference
+import java.util.concurrent.ExecutorService
+
 
 class MainActivity : AppCompatActivity() {
 
 
-    lateinit var binding: ActivityMainBinding
+    private  lateinit var executorService: ExecutorService
 
 
 //    val title: TextView by lazy { findViewById(R.id.titel_text) }
@@ -51,23 +56,25 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-      binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        setSupportActionBar( binding.toolbar)
-      val actionbar = supportActionBar
-        if (actionbar != null) {
-            actionbar.setDisplayShowHomeEnabled(true)
-        }
-        binding.titelText.text = "JOb"
-         var s=binding.titelText.text.toString()
-
-
 
     }
     fun checkUserMapStatus(): Int{
           var status = 1
         val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        if(App_preference.getSharedprefInstance()?.getLoginRes())
+        if(App_preference.getSharedprefInstance()?.getLoginRes()?.getIsFWgpsEnable().equals("1")){
+            status = 6
+            return status
+        }else if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+            && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED){
+            status=5
+            return status
+        }else if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            status = 4
+            return status
+        }else if(
+
+        )
     }
     /*private int checkUserMapStatus() {
         int status = 1;

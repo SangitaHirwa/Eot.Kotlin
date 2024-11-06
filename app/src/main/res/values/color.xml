@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#00848d</color>
+    <color name="colorPrimaryDark">#005760</color>
+    <color name="colorAccent">#00848d</color>
+    <color name="window_background">#f6f2f3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hintcolor">#cacaca</color>
+    <color name="black">#FF000000</color>
+    <color name="decline">#f0c84e</color>
+    <color name="in_progress">#6ed120</color>
+    <color name="blue_color">#4fabf2</color>
+    <color name="heading_green">#14b9c4</color>
+    <color name="separation_yellow">#e6c352</color>
+    <color name="dark_yellow">#EBB057</color>
+
+    <color name="barcode_bg">#34FFFFFF</color>
+
+    <!--job list font color-->
+    <color name="body_font_color">#737D7E</color>
+    <color name="border_font_color">#e4e3e1</color>
+
+    <!--custom search background color-->
+    <color name="custom_search_bg">#ebe8e8</color>
+    <color name="app_background_color">#ebe8e8</color>
+
+    <color name="actual_text">#685F5F</color>
+    <color name="start_text">#757575</color>
+    <color name="txt_color">#737D7E</color>
+    <color name="actual_taxt_time">#685F5F</color>
+    <color name="txt_sub_color">#757575</color>
+    <color name="txt_sub_color_">#838383</color>
+    <color name="about_equipment">#656565</color>
+    <color name="date_colore">#000000</color>
+    <color name="recyclerview">#f6f2f3</color>
+    <color name="card_view_color">#f5f2f2</color>
+    <color name="task_color">#e2e2e2</color>
+
+    <color name="red_color">#E32423</color>
+
+    <color name="chat_date_bck">#d0e7f5</color>
+
+    <color name="saperator_color">#cacaca</color>
+
+    <color name="payment_bg_one">#edf2f3</color>
+    <color name="payment_bg_two">#d9f3e6</color>
+    <color name="payment_bg_three">#fff2f3</color>
+
+    <color name="payment_text_one">#72777a</color>
+    <color name="payment_text_two">#00a753</color>
+    <color name="payment_text_three">#ff2a2d</color>
+    <color name="bg_color">#70babf</color>
+    <color name="bg_chat_header">#c3e7fd</color>
+    <color name="dis_bg_color">#90ffffff</color>
+
+    <color name="color_blue">#0000ff</color>
+    <color name="color_green">#008000</color>
+    <color name="color_gray">#737d7e</color>
+    <!--<color name="expense_txt_color">#171717</color>-->
+
+    <color name="color_custom_dp">#5000848d</color>
+    <color name="color_docu">#eef6f8</color>
+
+    <color name="sky">#F0FFFF</color>
+    <color name="pinck">#fff1f3</color>
+    <color name="darkpinck">#FF1493</color>
+    <color name="primarycolor_light">#16A1B4</color>
+
+    <color name="appointment_completed_bg">#1A2F80ED</color>
+    <color name="appointment_text_color">#4C000000</color>
+
+
+    <!--   <color name="flag_color">#657489</color>-->
+    <color name="flag_color">#7A8EAA</color>
+
+    <color name="week_deselect_color">#e1eded</color>
+    <color name="week_select_color">#078379</color>
+    <color name="bg_job">#f2f7fa</color>
+    <color name="light_red">#F67070</color>
+    <color name="invoice_calculation_bd">#EFFEFF</color>
+    <color name="invoice_sub_total_amount">#4F4F4F</color>
+    <color name="invoice_total_amount">#222222</color>
+    <color name="edt_hint_barcode">#666666</color>
+    <color name="scan_btn_barcode">#01848C</color>
+    <color name="dialog_edit_text_lbl_color">#72777A</color>
+    <color name="scroll_thumb_color">#1E5F62</color>
+    <color name="scroll_track_color">#CED4DA</color>
+    <color name="bg_color_dialog_toolbar">#E6F0F1</color>
+    <color name="txt_dialog_link_color">#16A1B4</color>
+    <color name="bg_rv_dialog">#EDEDED</color>
+    <color name="font_header_color">#514D4E</color>
+    <color name="que_label_color">#5C5C5C</color>
+    <color name="txt_link_color">#038590</color>
+    <color name="txt_btn_mark_color">#7A7F83</color>
+    <color name="btn_border_color">#c7c7c7</color>
+    <color name="green1">#30A648</color>
+    <color name="gray1">#717171</color>
+    <color name="light_red1">#FFF1F2</color>
+    <color name="light_red2">#FB7185</color>
+    <color name="requested_List">#edfcf2</color>
+    <color name="bg_link_item_note">#FEF3C7</color>
+    <color name="equp_link_item">#666666</color>
+    <color name="bule_service">#0057FF</color>
+    <color name="green_upcomingservice">#00AB33</color>
+    <color name="discard_link_equ">#FFE7E9</color>
+    <color name="reallocate_screen">#f5f0f2</color>
+    <color name="disable_btn">#78bdc3</color>
+    <color name="new_msg_gray">#6D6D6D</color>
+    <color name="offline_status_gray">#989697</color>
+</resources>
