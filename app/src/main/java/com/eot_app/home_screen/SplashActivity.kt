@@ -3,6 +3,7 @@ package com.eot_app.home_screen
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.eot_app.login_next.Login2Activity
 import com.eot_app.utility.App_preference
 import com.example.myapplication.databinding.ActivitySplashBinding
 
@@ -17,6 +18,13 @@ open class SplashActivity : AppCompatActivity() {
             val intent = Intent(
                 this@SplashActivity,
                 ProminentScreen::class.java
+            )
+            startActivity(intent)
+            finish()
+        }else{
+            val intent = Intent(
+                this@SplashActivity,
+                Login2Activity::class.java
             )
             startActivity(intent)
             finish()

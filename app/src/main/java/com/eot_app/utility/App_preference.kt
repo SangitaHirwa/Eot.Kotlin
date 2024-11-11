@@ -6,20 +6,22 @@ import com.eot_app.utility.util_interfaces.Sp_model
 
 open class App_preference : Sp_model {
 
+
     companion object {
-         val INSTANCE : Sp_model = App_preference()
+
+        val PREF_NAME: String = "eot_pref"
         private lateinit var sp: SharedPreferences
         private lateinit var editor: SharedPreferences.Editor
-        val PREF_NAME: String = "eot_pref"
-        private const val IS_LAUNCH = "is_launch"
+         private val INSTANCE : Sp_model = App_preference()
+        private val IS_LAUNCH = "is_launch"
         fun getSharedprefInstance(): Sp_model {
             return INSTANCE
         }
     }
-    constructor(){
-        sp = EotApp.getAppinstance().getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
-        editor = sp.edit()
-    }
+      constructor(){
+          sp = EotApp.getAppinstance()!!.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+          editor = sp.edit()
+      }
 
         override fun setLaunchFirst() {
             editor.putBoolean(IS_LAUNCH, false)

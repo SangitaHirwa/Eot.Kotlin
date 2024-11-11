@@ -46,7 +46,7 @@
     <dimen name="end_margin">20dp</dimen>
 
     <dimen name="standard_55">-65dp</dimen>
-    <dimen name="standard_100">-110dp</dimen>
+    <dimen name="standard_100">110dp</dimen>
     <dimen name="standard_145">-155dp</dimen>
     <dimen name="standard_200">-200dp</dimen>
 
